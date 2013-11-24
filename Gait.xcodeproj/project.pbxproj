@@ -21,6 +21,9 @@
 		0463FCAA1842088D0098EFB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463FC8C1842088D0098EFB6 /* UIKit.framework */; };
 		0463FCB21842088D0098EFB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0463FCB01842088D0098EFB6 /* InfoPlist.strings */; };
 		0463FCB41842088D0098EFB6 /* GaitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463FCB31842088D0098EFB6 /* GaitTests.m */; };
+		0463FCBE18420C330098EFB6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463FCBD18420C330098EFB6 /* CoreMotion.framework */; };
+		0463FCCE1842155B0098EFB6 /* PICircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463FCCD1842155B0098EFB6 /* PICircularProgressView.m */; };
+		0463FCCF1842155B0098EFB6 /* PICircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463FCCD1842155B0098EFB6 /* PICircularProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		0463FCAF1842088D0098EFB6 /* GaitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GaitTests-Info.plist"; sourceTree = "<group>"; };
 		0463FCB11842088D0098EFB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0463FCB31842088D0098EFB6 /* GaitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaitTests.m; sourceTree = "<group>"; };
+		0463FCBD18420C330098EFB6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0463FCCC1842155B0098EFB6 /* PICircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICircularProgressView.h; sourceTree = "<group>"; };
+		0463FCCD1842155B0098EFB6 /* PICircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICircularProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0463FCBE18420C330098EFB6 /* CoreMotion.framework in Frameworks */,
 				0463FC8B1842088D0098EFB6 /* CoreGraphics.framework in Frameworks */,
 				0463FC8D1842088D0098EFB6 /* UIKit.framework in Frameworks */,
 				0463FC891842088D0098EFB6 /* Foundation.framework in Frameworks */,
@@ -101,6 +108,7 @@
 		0463FC871842088D0098EFB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0463FCBD18420C330098EFB6 /* CoreMotion.framework */,
 				0463FC881842088D0098EFB6 /* Foundation.framework */,
 				0463FC8A1842088D0098EFB6 /* CoreGraphics.framework */,
 				0463FC8C1842088D0098EFB6 /* UIKit.framework */,
@@ -112,6 +120,7 @@
 		0463FC8E1842088D0098EFB6 /* Gait */ = {
 			isa = PBXGroup;
 			children = (
+				0463FCBF18420ECB0098EFB6 /* progressViews */,
 				0463FC971842088D0098EFB6 /* AppDelegate.h */,
 				0463FC981842088D0098EFB6 /* AppDelegate.m */,
 				0463FC9A1842088D0098EFB6 /* Main.storyboard */,
@@ -150,6 +159,15 @@
 				0463FCB01842088D0098EFB6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0463FCBF18420ECB0098EFB6 /* progressViews */ = {
+			isa = PBXGroup;
+			children = (
+				0463FCCC1842155B0098EFB6 /* PICircularProgressView.h */,
+				0463FCCD1842155B0098EFB6 /* PICircularProgressView.m */,
+			);
+			name = progressViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0463FC9F1842088D0098EFB6 /* ViewController.m in Sources */,
+				0463FCCE1842155B0098EFB6 /* PICircularProgressView.m in Sources */,
 				0463FC991842088D0098EFB6 /* AppDelegate.m in Sources */,
 				0463FC951842088D0098EFB6 /* main.m in Sources */,
 			);
@@ -260,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0463FCB41842088D0098EFB6 /* GaitTests.m in Sources */,
+				0463FCCF1842155B0098EFB6 /* PICircularProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
