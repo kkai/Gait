@@ -41,7 +41,6 @@
     _todayProgressView.showShadow = false;
     _todayProgressView.progressFillColor =self.view.tintColor;
     
-    
     _yesterdayProgressView.showShadow = false;
     _yesterdayProgressView.progressFillColor =self.view.tintColor;
     
@@ -115,7 +114,7 @@
                                              toQueue:[NSOperationQueue mainQueue]
                                          withHandler:^(NSInteger numberOfSteps, NSError *error) {
                                              
-                                             _todayProgressView.progress = numberOfSteps / 50000.0;
+                                             _todayProgressView.progress = numberOfSteps / 10000.0;
                                              //[weakSelf fadeAnimationVisible:YES];
                                              weakSelf.todayStepsLabel.text = [@(numberOfSteps) stringValue];
                                          }];
@@ -126,7 +125,7 @@
                                              toQueue:[NSOperationQueue mainQueue]
                                          withHandler:^(NSInteger numberOfSteps, NSError *error) {
                                            
-                                             _yesterdayProgressView.progress = numberOfSteps / 100000.0;
+                                             _yesterdayProgressView.progress = numberOfSteps / 10000.0;
 
                                              //[weakSelf fadeAnimationVisible:YES];
                                              weakSelf.yesterdayStepsLabel.text = [@(numberOfSteps) stringValue];
@@ -136,7 +135,7 @@
                                              toQueue:[NSOperationQueue mainQueue]
                                          withHandler:^(NSInteger numberOfSteps, NSError *error) {
                                              
-                                             _thisWeekProgressView.progress = numberOfSteps / 700000.0;
+                                             _thisWeekProgressView.progress = numberOfSteps / 70000.0;
 
                                              //[weakSelf fadeAnimationVisible:YES];
                                              weakSelf.thisWeekStepsLabel.text = [@(numberOfSteps) stringValue];
@@ -147,7 +146,7 @@
                                          withHandler:^(NSInteger numberOfSteps, NSError *error) {
                                              
                                              //[weakSelf fadeAnimationVisible:YES];
-                                             _lastWeekProgressView.progress = numberOfSteps / 700000.0;
+                                             _lastWeekProgressView.progress = numberOfSteps / 70000.0;
 
                                              weakSelf.lastWeekStepsLabel.text = [@(numberOfSteps) stringValue];
                                          }];
@@ -157,7 +156,7 @@
                                          withHandler:^(NSInteger numberOfSteps, NSError *error) {
                                              
                                              //[weakSelf fadeAnimationVisible:YES];
-                                             _thisMonthProgressView.progress = numberOfSteps / 3000000.0;
+                                             _thisMonthProgressView.progress = numberOfSteps / 300000.0;
 
                                              weakSelf.thisMonthStepsLabel.text = [@(numberOfSteps) stringValue];
                                          }];
