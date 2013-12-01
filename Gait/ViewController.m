@@ -95,17 +95,17 @@
         [components setDay:([components day] - 7)];
         NSDate *lastWeek  = [cal dateFromComponents:components];
         
-        [components setDay:([components day] - ([components day] -1))];
+        [components setMonth:([components month] - 1)];
         NSDate *thisMonth = [cal dateFromComponents:components];
         
         //[components setMonth:([components month] - 1)];
         //NSDate *lastMonth = [cal dateFromComponents:components];
         
-        //NSLog(@"today=%@",today);
+        NSLog(@"today=%@",today);
         //NSLog(@"yesterday=%@",yesterday);
         //NSLog(@"thisWeek=%@",thisWeek);
         //NSLog(@"lastWeek=%@",lastWeek);
-        //NSLog(@"thisMonth=%@",thisMonth);
+        NSLog(@"thisMonth=%@",thisMonth);
         //NSLog(@"lastMonth=%@",lastMonth);
         
         
