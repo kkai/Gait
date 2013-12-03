@@ -344,42 +344,6 @@
             </objects>
             <point key="canvasLocation" x="-433" y="-66"/>
         </scene>
-        <!--View Controller - Item 1-->
-        <scene sceneID="3E0-5c-maA">
-            <objects>
-                <viewController id="WkP-FD-mhg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FjT-sP-BjY"/>
-                        <viewControllerLayoutGuide type="bottom" id="y3u-As-8NZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZaI-Au-0M2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="6Ia-EH-O5o"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BWe-cO-f2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller - Item 2-->
-        <scene sceneID="Cy2-yg-OkA">
-            <objects>
-                <viewController id="yWO-3J-spT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jce-4V-vSc"/>
-                        <viewControllerLayoutGuide type="bottom" id="IUQ-yx-wru"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="y5g-tQ-0Ge">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="tL0-aP-Opr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="try-Nc-Q5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
