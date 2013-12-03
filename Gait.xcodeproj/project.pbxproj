@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04244659184C2BA6004F9790 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04244657184C2BA6004F9790 /* StartViewController.m */; };
+		0424465D184C4554004F9790 /* GaitTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424465C184C4554004F9790 /* GaitTableViewController.m */; };
+		04244660184C4AE9004F9790 /* GaitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424465F184C4AE9004F9790 /* GaitCell.m */; };
 		0463FC891842088D0098EFB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463FC881842088D0098EFB6 /* Foundation.framework */; };
 		0463FC8B1842088D0098EFB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463FC8A1842088D0098EFB6 /* CoreGraphics.framework */; };
 		0463FC8D1842088D0098EFB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463FC8C1842088D0098EFB6 /* UIKit.framework */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04244656184C2BA6004F9790 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		04244657184C2BA6004F9790 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		0424465B184C4554004F9790 /* GaitTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaitTableViewController.h; sourceTree = "<group>"; };
+		0424465C184C4554004F9790 /* GaitTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaitTableViewController.m; sourceTree = "<group>"; };
+		0424465E184C4AE9004F9790 /* GaitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaitCell.h; sourceTree = "<group>"; };
+		0424465F184C4AE9004F9790 /* GaitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaitCell.m; sourceTree = "<group>"; };
 		0463FC851842088D0098EFB6 /* Gait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463FC881842088D0098EFB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0463FC8A1842088D0098EFB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +137,12 @@
 				0463FC9E1842088D0098EFB6 /* ViewController.m */,
 				0463FCA01842088D0098EFB6 /* Images.xcassets */,
 				0463FC8F1842088D0098EFB6 /* Supporting Files */,
+				04244656184C2BA6004F9790 /* StartViewController.h */,
+				04244657184C2BA6004F9790 /* StartViewController.m */,
+				0424465B184C4554004F9790 /* GaitTableViewController.h */,
+				0424465C184C4554004F9790 /* GaitTableViewController.m */,
+				0424465E184C4AE9004F9790 /* GaitCell.h */,
+				0424465F184C4AE9004F9790 /* GaitCell.m */,
 			);
 			path = Gait;
 			sourceTree = "<group>";
@@ -272,7 +287,10 @@
 			files = (
 				0463FC9F1842088D0098EFB6 /* ViewController.m in Sources */,
 				0463FCCE1842155B0098EFB6 /* PICircularProgressView.m in Sources */,
+				04244660184C4AE9004F9790 /* GaitCell.m in Sources */,
+				04244659184C2BA6004F9790 /* StartViewController.m in Sources */,
 				0463FC991842088D0098EFB6 /* AppDelegate.m in Sources */,
+				0424465D184C4554004F9790 /* GaitTableViewController.m in Sources */,
 				0463FC951842088D0098EFB6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
