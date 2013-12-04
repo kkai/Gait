@@ -107,7 +107,6 @@
     NSDate *today = [gregorian dateFromComponents:comps];
     
     [cell applyStyle];
-    cell.totalSteps.text = @"of 12000";
     
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDateComponents *components = [cal components:( NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate:[[NSDate alloc] init]];
@@ -138,6 +137,7 @@
     
     if(indexPath.row == 0){
         [cell setName:@"Step Count Today"];
+         cell.totalSteps.text = @"of 12000";
         [self.stepCounter queryStepCountStartingFrom:today
                                                   to:now
                                              toQueue:[NSOperationQueue mainQueue]
@@ -151,6 +151,7 @@
         
     }else if (indexPath.row == 1){
         [cell setName:@"Step Count Yesterday"];
+        cell.totalSteps.text = @"of 12000";
         [self.stepCounter queryStepCountStartingFrom:yesterday
                                                   to:today
                                              toQueue:[NSOperationQueue mainQueue]
@@ -162,6 +163,7 @@
                                          }];
     }else if (indexPath.row == 2){
         [cell setName:@"Step Count This Week"];
+        cell.totalSteps.text = @"of 84000";
         [self.stepCounter queryStepCountStartingFrom:thisWeek
                                               to:now
                                          toQueue:[NSOperationQueue mainQueue]
@@ -173,6 +175,7 @@
                                      }];
     }else if (indexPath.row == 3){
         [cell setName:@"Step Count Last Week"];
+        cell.totalSteps.text = @"of 84000";
         [self.stepCounter queryStepCountStartingFrom:lastWeek
                                                   to:thisWeek
                                              toQueue:[NSOperationQueue mainQueue]
@@ -193,7 +196,8 @@
                                              NSRange rng = [cal rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:[NSDate date]];
                                              NSUInteger numberOfDaysInMonth = rng.length;
                                              [cell setProgress:numberOfSteps / (numberOfDaysInMonth*12000.0)];
-                                             
+                                            NSString *str = @"of ";
+                                             cell.totalSteps.text = [str stringByAppendingString:[@(numberOfDaysInMonth*12000.0) stringValue]];
                                              //[weakSelf fadeAnimationVisible:YES];
                                              [cell setSteps:[@(numberOfSteps) stringValue]];
                                          }];
